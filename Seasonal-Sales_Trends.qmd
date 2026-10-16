@@ -14,7 +14,7 @@ We're using three libraries:
 - **numpy** for making up our practice data
 - **matplotlib** for the chart
 
-I recommend just pulling data from H&M fashion Dataset on Kaggle or a similar website, and this should come with retail datat already. If you want to follow along with my code the data I used is on my GitHub.
+I just pulled the data from H&M fashion Dataset on Kaggle or a similar website and this should come with retail data already. If you want to follow along with my code the data I used is on my GitHub.
 
 
 ## Building the Chart
@@ -29,16 +29,21 @@ import matplotlib.pyplot as plt
 
 ### Making the Data
 
-The fake sales have three pieces: a **baseline** (what the store normally sells in a day), a **seasonal bump** (higher in winter, lower in summer), and **noise** (random daily ups and downs, because real life is messy). I also added a slow upward **trend** so it looks like the store is growing.
+The sales have three pieces: 
+- a **baseline**: what the store normally sells in a day
+- a **seasonal bump**: higher in winter lower in summer
+- **noise**: random daily ups and downs because real life is messy
 
 ```{python}
-rng = np.random.default_rng(386)  # seed so you get the same data I did
+rng = np.random.default_rng(386)  
+
+set.seed(1234)
 
 dates = pd.date_range("2023-01-01", "2024-12-31", freq="D")
 month = dates.month
 
 base = 100
-seasonal = 40 * np.cos(2 * np.pi * (month - 12) / 12)  # peaks in December
+seasonal = 40 * np.cos(2 * np.pi * (month - 12) / 12) 
 trend = np.linspace(0, 15, len(dates))
 noise = rng.normal(0, 10, len(dates))
 

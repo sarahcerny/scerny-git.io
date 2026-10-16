@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Seasonal Sales Trends – scerny.github.io</title>
+<title>Daily Sales to Seasonal Trends – scerny.github.io</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -64,7 +64,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script><script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -108,6 +108,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
+<script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js" integrity="sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4qY6NSrItx" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
 
 <link rel="stylesheet" href="styles.css">
@@ -159,12 +162,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
-  <li><a href="#setup" id="toc-setup" class="nav-link" data-scroll-target="#setup">Setup</a></li>
-  <li><a href="#step-1-look-at-your-data" id="toc-step-1-look-at-your-data" class="nav-link" data-scroll-target="#step-1-look-at-your-data">Step 1: Look at your data</a></li>
-  <li><a href="#step-2-group-and-summarize" id="toc-step-2-group-and-summarize" class="nav-link" data-scroll-target="#step-2-group-and-summarize">Step 2: Group and summarize</a></li>
-  <li><a href="#step-3-multiple-summaries-at-once" id="toc-step-3-multiple-summaries-at-once" class="nav-link" data-scroll-target="#step-3-multiple-summaries-at-once">Step 3: Multiple summaries at once</a></li>
-  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  <li><a href="#the-tools" id="toc-the-tools" class="nav-link active" data-scroll-target="#the-tools">The Tools</a></li>
+  <li><a href="#building-the-chart" id="toc-building-the-chart" class="nav-link" data-scroll-target="#building-the-chart">Building the Chart</a>
+  <ul class="collapse">
+  <li><a href="#imports" id="toc-imports" class="nav-link" data-scroll-target="#imports">Imports</a></li>
+  <li><a href="#making-the-data" id="toc-making-the-data" class="nav-link" data-scroll-target="#making-the-data">Making the Data</a></li>
+  <li><a href="#wrangling" id="toc-wrangling" class="nav-link" data-scroll-target="#wrangling">Wrangling</a></li>
+  <li><a href="#visualization" id="toc-visualization" class="nav-link" data-scroll-target="#visualization">Visualization</a></li>
+  </ul></li>
+  <li><a href="#why-this-matters" id="toc-why-this-matters" class="nav-link" data-scroll-target="#why-this-matters">Why This Matters</a></li>
+  <li><a href="#wrapping-it-up" id="toc-wrapping-it-up" class="nav-link" data-scroll-target="#wrapping-it-up">Wrapping It Up</a></li>
   </ul>
 </nav>
     </div>
@@ -173,7 +180,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Seasonal Sales Trends</h1>
+<h1 class="title">Daily Sales to Seasonal Trends</h1>
 </div>
 
 
@@ -190,35 +197,157 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="introduction" class="level2">
-<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>[Why does summarizing data by group matter? Give a real example, like “what’s the average sale per store?”]</p>
+<p>If you’ve ever worked retail you know the feeling. One week the store is dead and the next week everyone needs a winter coat and you’re sold out of everything good. That’s not random. Sales go up and down in a pattern that repeats every year and if you can spot it early you can plan for it instead of scrambling after it happens.</p>
+<p>I wanted to see that pattern in an actual chart and it turns out it’s not too hard. In this tutorial I’ll show you how to take daily sales add them up by month and plot the result so the seasons jump out at you. You only need basic Python and a little bit of pandas.</p>
+<section id="the-tools" class="level2">
+<h2 class="anchored" data-anchor-id="the-tools">The Tools</h2>
+<p>We’re using three libraries:</p>
+<ul>
+<li><strong>pandas</strong> for organizing and grouping the data</li>
+<li><strong>numpy</strong> for making up our practice data</li>
+<li><strong>matplotlib</strong> for the chart</li>
+</ul>
+<p>I recommend just pulling data from H&amp;M fashion Dataset on Kaggle or a similar website, and this should come with retail datat already. If you want to follow along with my code the data I used is on my GitHub.</p>
 </section>
-<section id="setup" class="level2">
-<h2 class="anchored" data-anchor-id="setup">Setup</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="building-the-chart" class="level2">
+<h2 class="anchored" data-anchor-id="building-the-chart">Building the Chart</h2>
+<section id="imports" class="level3">
+<h3 class="anchored" data-anchor-id="imports">Imports</h3>
+<div id="47a31bfb" class="cell" data-execution_count="1">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
 </section>
-<section id="step-1-look-at-your-data" class="level2">
-<h2 class="anchored" data-anchor-id="step-1-look-at-your-data">Step 1: Look at your data</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame({</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">"store"</span>: [<span class="st">"A"</span>, <span class="st">"A"</span>, <span class="st">"B"</span>, <span class="st">"B"</span>, <span class="st">"C"</span>],</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"sales"</span>: [<span class="dv">100</span>, <span class="dv">150</span>, <span class="dv">200</span>, <span class="dv">120</span>, <span class="dv">90</span>]</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>})</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>df</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>[Explain what the reader is looking at.]</p>
+<section id="making-the-data" class="level3">
+<h3 class="anchored" data-anchor-id="making-the-data">Making the Data</h3>
+<p>The fake sales have three pieces: a <strong>baseline</strong> (what the store normally sells in a day), a <strong>seasonal bump</strong> (higher in winter, lower in summer), and <strong>noise</strong> (random daily ups and downs, because real life is messy). I also added a slow upward <strong>trend</strong> so it looks like the store is growing.</p>
+<div id="c65c9eb4" class="cell" data-execution_count="2">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>rng <span class="op">=</span> np.random.default_rng(<span class="dv">386</span>)  <span class="co"># seed so you get the same data I did</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>dates <span class="op">=</span> pd.date_range(<span class="st">"2023-01-01"</span>, <span class="st">"2024-12-31"</span>, freq<span class="op">=</span><span class="st">"D"</span>)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>month <span class="op">=</span> dates.month</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>base <span class="op">=</span> <span class="dv">100</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>seasonal <span class="op">=</span> <span class="dv">40</span> <span class="op">*</span> np.cos(<span class="dv">2</span> <span class="op">*</span> np.pi <span class="op">*</span> (month <span class="op">-</span> <span class="dv">12</span>) <span class="op">/</span> <span class="dv">12</span>)  <span class="co"># peaks in December</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>trend <span class="op">=</span> np.linspace(<span class="dv">0</span>, <span class="dv">15</span>, <span class="bu">len</span>(dates))</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>noise <span class="op">=</span> rng.normal(<span class="dv">0</span>, <span class="dv">10</span>, <span class="bu">len</span>(dates))</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame({</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>    <span class="st">"date"</span>: dates,</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    <span class="st">"sales"</span>: (base <span class="op">+</span> seasonal <span class="op">+</span> trend <span class="op">+</span> noise).<span class="bu">round</span>(<span class="dv">2</span>),</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>df.head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="2">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">date</th>
+<th data-quarto-table-cell-role="th">sales</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">0</th>
+<td>2023-01-01</td>
+<td>118.12</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">1</th>
+<td>2023-01-02</td>
+<td>148.29</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">2</th>
+<td>2023-01-03</td>
+<td>138.04</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">3</th>
+<td>2023-01-04</td>
+<td>130.84</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">4</th>
+<td>2023-01-05</td>
+<td>131.27</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<p><code>df.head()</code> shows the first five rows: one row per day with that day’s sales. The whole table has 731 rows, which is way too many to look at one by one, so that’s our next problem.</p>
 </section>
-<section id="step-2-group-and-summarize" class="level2">
-<h2 class="anchored" data-anchor-id="step-2-group-and-summarize">Step 2: Group and summarize</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>df.groupby(<span class="st">"store"</span>)[<span class="st">"sales"</span>].mean()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>[Explain what each piece does: group by what, which column, which summary.]</p>
+<section id="wrangling" class="level3">
+<h3 class="anchored" data-anchor-id="wrangling">Wrangling</h3>
+<p>Daily sales are super bouncy, so it’s hard to see any pattern. Adding them up by month fixes that:</p>
+<div id="9d01daad" class="cell" data-execution_count="3">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>monthly <span class="op">=</span> df.groupby(df[<span class="st">"date"</span>].dt.to_period(<span class="st">"M"</span>))[<span class="st">"sales"</span>].<span class="bu">sum</span>()</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>monthly.head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="3">
+<pre><code>date
+2023-01    4077.56
+2023-02    3316.28
+2023-03    3148.97
+2023-04    2393.76
+2023-05    2146.46
+Freq: M, Name: sales, dtype: float64</code></pre>
+</div>
+</div>
+<p>The main thing we need to do here is group the rows by month and add up the sales in each group. Here’s what each part does:</p>
+<ul>
+<li><code>df["date"].dt.to_period("M")</code>: turns each date into its month, so January 5th and January 20th both become “2023-01”</li>
+<li><code>df.groupby(...)</code>: puts all the rows from the same month into one group</li>
+<li><code>["sales"].sum()</code>: adds up the sales in each group</li>
+</ul>
+<p>Now we have 24 numbers instead of 731.</p>
 </section>
-<section id="step-3-multiple-summaries-at-once" class="level2">
-<h2 class="anchored" data-anchor-id="step-3-multiple-summaries-at-once">Step 3: Multiple summaries at once</h2>
-<p>[Show <code>.agg()</code>, maybe with a small table of results.]</p>
+<section id="visualization" class="level3">
+<h3 class="anchored" data-anchor-id="visualization">Visualization</h3>
+<p>Now for the best part! Here’s the code, and then I’ll break it down.</p>
+<div id="28a5942b" class="cell" data-execution_count="4">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>monthly.plot(kind<span class="op">=</span><span class="st">"line"</span>, marker<span class="op">=</span><span class="st">"o"</span>)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Monthly Sales (2023-2024)"</span>)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Month"</span>)</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"Total Sales"</span>)</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Seasonal-Sales_Trends_files/figure-html/cell-5-output-1.png" alt="Line chart of monthly sales over two years, with a peak each winter and a dip each summer" width="602" height="469" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li><code>monthly.plot(kind="line", marker="o")</code>: draws the line, with a dot for each month</li>
+<li><code>plt.title()</code>, <code>plt.xlabel()</code>, <code>plt.ylabel()</code>: label the chart so people know what they’re looking at</li>
+<li><code>plt.show()</code>: displays it</li>
+</ul>
+<p>You should see two big humps, one around each winter, with a dip in between. That’s the seasonality. The pattern repeats, so if it happened last December, it’s probably going to happen this December too.</p>
+<p>You might also notice the whole line drifts up over time. That’s the trend, and it’s different from seasonality. Seasonality goes up and down every year, while a trend keeps heading in one direction.</p>
 </section>
-<section id="conclusion" class="level2">
-<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
-<p>[Recap in a sentence or two, then give a concrete next step, like “try it on a dataset you care about.”]</p>
+</section>
+<section id="why-this-matters" class="level2">
+<h2 class="anchored" data-anchor-id="why-this-matters">Why This Matters</h2>
+<p>If you know sales jump every winter, you can stock up before the rush, schedule more people, and plan your promotions around it. This is also the basic idea behind forecasting. The fancy models that predict future sales are mostly doing a fancier version of this: finding the repeating pattern and projecting it forward.</p>
+</section>
+<section id="wrapping-it-up" class="level2">
+<h2 class="anchored" data-anchor-id="wrapping-it-up">Wrapping It Up</h2>
+<p>In this tutorial, you should have learned how to turn a pile of daily sales into a chart that shows the seasons, using <code>groupby</code>, <code>.dt.to_period()</code>, and a simple line plot. Even if it looked intimidating at first, it’s really just grouping your data and plotting it.</p>
+<p>Now that you know how to do it, here are some things to try:</p>
+<ul>
+<li>Change <code>"M"</code> to <code>"Q"</code> to group by quarter and see how the chart changes</li>
+<li>Make the seasonal bump bigger in the fake data and see how the chart reacts</li>
+<li>Try it on real data, like the H&amp;M dataset linked above</li>
+</ul>
+<p>Happy plotting!</p>
 
 
 </section>
