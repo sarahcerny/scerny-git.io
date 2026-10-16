@@ -2,7 +2,7 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "About Me",
     "section": "",
     "text": "Hi I’m Sarah!"
   },
@@ -12,5 +12,33 @@
     "title": "scerny.github.io",
     "section": "",
     "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "about.html#background",
+    "href": "about.html#background",
+    "title": "About Me",
+    "section": "Background",
+    "text": "Background\nI’m a student at BYU studying Statistics with an emphasis in Data Science and a minor in Computer Science. I love learning and trying new things."
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "About Me",
+    "section": "Education",
+    "text": "Education\nBachelor of Statistics, Data Science emphasis, Brigham Young University, expected Dec 2027 Minor in Computer Science Relevant coursework: Computer Science 111 Statistics 230 and 240, Calculus 1 and 2, Elementary Linear Algebra"
+  },
+  {
+    "objectID": "about.html#fun-facts",
+    "href": "about.html#fun-facts",
+    "title": "About Me",
+    "section": "Fun Facts",
+    "text": "Fun Facts\n\nI love mountain biking, and I was captain of GRIT (Girls Riding Together) on the Lone Peak Mountain Bike Team for five years\nI love to travel, and London this summer is my favorite trip so far\nI used to be a canopy tour guide at a ropes course so I’m trained in safety and emergency response"
+  },
+  {
+    "objectID": "about.html#experience",
+    "href": "about.html#experience",
+    "title": "About Me",
+    "section": "Experience",
+    "text": "Experience\nRetail Sales Specialist and Sales Lead LOFT Outlet, Jun 2024 to present - Promoted to Sales Lead for consistent performance and leadership - Trusted to open and close the store and manage daily operations - Handle cash and process returns accurately - Receptionist Lehi School of Music Jun 2025 to Feb 2026 - Coordinated lesson scheduling and new enrollments - Communicated with parents about lesson times, makeups, and breaks - Handled billing and payments, and supported student recitals - Student Health Plan Representative, BYU, Aug 2024 to Jan 2025 - Helped students with questions about the student health plan over the phone - Handled confidential information following HIPAA laws - Used Excel, Teams, Workday, and RingCentral - Front Desk and Canopy Tour Guide, Museum of Natural Curiosity, Mar 2022 to May 2025 - Managed admissions and helped guests at the front desk - Trained and supervised new employees on safety and tour protocols - Guided adults and kids through the ropes course"
   }
 ]
