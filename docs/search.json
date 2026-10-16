@@ -40,5 +40,54 @@
     "title": "About Me",
     "section": "Experience",
     "text": "Experience\nRetail Sales Specialist and Sales Lead LOFT Outlet, Jun 2024 to present - Promoted to Sales Lead for consistent performance and leadership - Trusted to open and close the store and manage daily operations - Handle cash and process returns accurately - Receptionist Lehi School of Music Jun 2025 to Feb 2026 - Coordinated lesson scheduling and new enrollments - Communicated with parents about lesson times, makeups, and breaks - Handled billing and payments, and supported student recitals - Student Health Plan Representative, BYU, Aug 2024 to Jan 2025 - Helped students with questions about the student health plan over the phone - Handled confidential information following HIPAA laws - Used Excel, Teams, Workday, and RingCentral - Front Desk and Canopy Tour Guide, Museum of Natural Curiosity, Mar 2022 to May 2025 - Managed admissions and helped guests at the front desk - Trained and supervised new employees on safety and tour protocols - Guided adults and kids through the ropes course"
+  },
+  {
+    "objectID": "Seasonal-Sales_Trends.html",
+    "href": "Seasonal-Sales_Trends.html",
+    "title": "Seasonal Sales Trends",
+    "section": "",
+    "text": "[Why does summarizing data by group matter? Give a real example, like “what’s the average sale per store?”]"
+  },
+  {
+    "objectID": "Seasonal-Sales_Trends.html#introduction",
+    "href": "Seasonal-Sales_Trends.html#introduction",
+    "title": "Seasonal Sales Trends",
+    "section": "",
+    "text": "[Why does summarizing data by group matter? Give a real example, like “what’s the average sale per store?”]"
+  },
+  {
+    "objectID": "Seasonal-Sales_Trends.html#setup",
+    "href": "Seasonal-Sales_Trends.html#setup",
+    "title": "Seasonal Sales Trends",
+    "section": "Setup",
+    "text": "Setup\nimport pandas as pd"
+  },
+  {
+    "objectID": "Seasonal-Sales_Trends.html#step-1-look-at-your-data",
+    "href": "Seasonal-Sales_Trends.html#step-1-look-at-your-data",
+    "title": "Seasonal Sales Trends",
+    "section": "Step 1: Look at your data",
+    "text": "Step 1: Look at your data\ndf = pd.DataFrame({\n    \"store\": [\"A\", \"A\", \"B\", \"B\", \"C\"],\n    \"sales\": [100, 150, 200, 120, 90]\n})\ndf\n[Explain what the reader is looking at.]"
+  },
+  {
+    "objectID": "Seasonal-Sales_Trends.html#step-2-group-and-summarize",
+    "href": "Seasonal-Sales_Trends.html#step-2-group-and-summarize",
+    "title": "Seasonal Sales Trends",
+    "section": "Step 2: Group and summarize",
+    "text": "Step 2: Group and summarize\ndf.groupby(\"store\")[\"sales\"].mean()\n[Explain what each piece does: group by what, which column, which summary.]"
+  },
+  {
+    "objectID": "Seasonal-Sales_Trends.html#step-3-multiple-summaries-at-once",
+    "href": "Seasonal-Sales_Trends.html#step-3-multiple-summaries-at-once",
+    "title": "Seasonal Sales Trends",
+    "section": "Step 3: Multiple summaries at once",
+    "text": "Step 3: Multiple summaries at once\n[Show .agg(), maybe with a small table of results.]"
+  },
+  {
+    "objectID": "Seasonal-Sales_Trends.html#conclusion",
+    "href": "Seasonal-Sales_Trends.html#conclusion",
+    "title": "Seasonal Sales Trends",
+    "section": "Conclusion",
+    "text": "Conclusion\n[Recap in a sentence or two, then give a concrete next step, like “try it on a dataset you care about.”]"
   }
 ]

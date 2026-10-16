@@ -1,41 +1,106 @@
 ---
-title: "Seasonal Sales Trends"
+title: "Daily Sales to Seasonal Trends"
 ---
 
-## Introduction
+If you've ever worked retail you know the feeling. One week the store is dead and the next week everyone needs a winter coat and you're sold out of everything good. That's not random. Sales go up and down in a pattern that repeats every year and if you can spot it early you can plan for it instead of scrambling after it happens.
 
-[Why does summarizing data by group matter? Give a real example, like "what's the average sale per store?"]
+I wanted to see that pattern in an actual chart and it turns out it's not too hard. In this tutorial I'll show you how to take daily sales add them up by month and plot the result so the seasons jump out at you. You only need basic Python and a little bit of pandas.
 
-## Setup
+## The Tools
 
-```python
+We're using three libraries:
+
+- **pandas** for organizing and grouping the data
+- **numpy** for making up our practice data
+- **matplotlib** for the chart
+
+I recommend just pulling data from H&M fashion Dataset on Kaggle or a similar website, and this should come with retail datat already. If you want to follow along with my code the data I used is on my GitHub.
+
+
+## Building the Chart
+
+### Imports
+
+```{python}
+import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
 ```
 
-## Step 1: Look at your data
+### Making the Data
 
-```python
+The fake sales have three pieces: a **baseline** (what the store normally sells in a day), a **seasonal bump** (higher in winter, lower in summer), and **noise** (random daily ups and downs, because real life is messy). I also added a slow upward **trend** so it looks like the store is growing.
+
+```{python}
+rng = np.random.default_rng(386)  # seed so you get the same data I did
+
+dates = pd.date_range("2023-01-01", "2024-12-31", freq="D")
+month = dates.month
+
+base = 100
+seasonal = 40 * np.cos(2 * np.pi * (month - 12) / 12)  # peaks in December
+trend = np.linspace(0, 15, len(dates))
+noise = rng.normal(0, 10, len(dates))
+
 df = pd.DataFrame({
-    "store": ["A", "A", "B", "B", "C"],
-    "sales": [100, 150, 200, 120, 90]
+    "date": dates,
+    "sales": (base + seasonal + trend + noise).round(2),
 })
-df
+df.head()
 ```
 
-[Explain what the reader is looking at.]
+`df.head()` shows the first five rows: one row per day with that day's sales. The whole table has 731 rows, which is way too many to look at one by one, so that's our next problem.
 
-## Step 2: Group and summarize
+### Wrangling
 
-```python
-df.groupby("store")["sales"].mean()
+Daily sales are super bouncy, so it's hard to see any pattern. Adding them up by month fixes that:
+
+```{python}
+monthly = df.groupby(df["date"].dt.to_period("M"))["sales"].sum()
+monthly.head()
 ```
 
-[Explain what each piece does: group by what, which column, which summary.]
+The main thing we need to do here is group the rows by month and add up the sales in each group. Here's what each part does:
 
-## Step 3: Multiple summaries at once
+- `df["date"].dt.to_period("M")`: turns each date into its month, so January 5th and January 20th both become "2023-01"
+- `df.groupby(...)`: puts all the rows from the same month into one group
+- `["sales"].sum()`: adds up the sales in each group
 
-[Show `.agg()`, maybe with a small table of results.]
+Now we have 24 numbers instead of 731.
 
-## Conclusion
+### Visualization
 
-[Recap in a sentence or two, then give a concrete next step, like "try it on a dataset you care about."]
+Now for the best part! Here's the code, and then I'll break it down.
+
+```{python}
+#| fig-alt: "Line chart of monthly sales over two years, with a peak each winter and a dip each summer"
+monthly.plot(kind="line", marker="o")
+plt.title("Monthly Sales (2023-2024)")
+plt.xlabel("Month")
+plt.ylabel("Total Sales")
+plt.show()
+```
+
+- `monthly.plot(kind="line", marker="o")`: draws the line, with a dot for each month
+- `plt.title()`, `plt.xlabel()`, `plt.ylabel()`: label the chart so people know what they're looking at
+- `plt.show()`: displays it
+
+You should see two big humps, one around each winter, with a dip in between. That's the seasonality. The pattern repeats, so if it happened last December, it's probably going to happen this December too.
+
+You might also notice the whole line drifts up over time. That's the trend, and it's different from seasonality. Seasonality goes up and down every year, while a trend keeps heading in one direction.
+
+## Why This Matters
+
+If you know sales jump every winter, you can stock up before the rush, schedule more people, and plan your promotions around it. This is also the basic idea behind forecasting. The fancy models that predict future sales are mostly doing a fancier version of this: finding the repeating pattern and projecting it forward.
+
+## Wrapping It Up
+
+In this tutorial, you should have learned how to turn a pile of daily sales into a chart that shows the seasons, using `groupby`, `.dt.to_period()`, and a simple line plot. Even if it looked intimidating at first, it's really just grouping your data and plotting it.
+
+Now that you know how to do it, here are some things to try:
+
+- Change `"M"` to `"Q"` to group by quarter and see how the chart changes
+- Make the seasonal bump bigger in the fake data and see how the chart reacts
+- Try it on real data, like the H&M dataset linked above
+
+Happy plotting!
