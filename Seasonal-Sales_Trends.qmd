@@ -1,0 +1,41 @@
+---
+title: "Seasonal Sales Trends"
+---
+
+## Introduction
+
+[Why does summarizing data by group matter? Give a real example, like "what's the average sale per store?"]
+
+## Setup
+
+```python
+import pandas as pd
+```
+
+## Step 1: Look at your data
+
+```python
+df = pd.DataFrame({
+    "store": ["A", "A", "B", "B", "C"],
+    "sales": [100, 150, 200, 120, 90]
+})
+df
+```
+
+[Explain what the reader is looking at.]
+
+## Step 2: Group and summarize
+
+```python
+df.groupby("store")["sales"].mean()
+```
+
+[Explain what each piece does: group by what, which column, which summary.]
+
+## Step 3: Multiple summaries at once
+
+[Show `.agg()`, maybe with a small table of results.]
+
+## Conclusion
+
+[Recap in a sentence or two, then give a concrete next step, like "try it on a dataset you care about."]

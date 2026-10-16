@@ -9,6 +9,7 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
+      - Seasonal-Sales_Trends.qmd.qmd
 
 format:
   html:
