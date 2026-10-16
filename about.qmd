@@ -3,3 +3,7 @@ title: "About"
 ---
 
 Hi I'm Sarah!
+
+## Background
+
+I'm a student at BYU studying Statistics with an emphasis in Data Science and a minor in Computer Science. I love learning and trying new things. 
