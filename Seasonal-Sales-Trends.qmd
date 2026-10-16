@@ -22,9 +22,7 @@ I just pulled the data from H&M fashion Dataset on Kaggle or a similar website a
 ### Imports
 
 ```{python}
-import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
 
 # Load sales data
 sales = pd.read_csv("/Users/sarahcerny/Downloads/sales.csv")
@@ -93,9 +91,5 @@ If you know sales jump every winter you can stock up before the rush schedule mo
 ## Wrapping It Up
 
 In this tutorial you should have learned how to turn a pile of daily sales into a chart that shows the seasons using groupby .agg() and .plot.line(). It's really just grouping your data and plotting it.
-
-## Wrapping It Up
-
-In this tutorial, you should have learned how to turn a pile of daily sales into a chart that shows the seasons, using groupby, .agg(), and .plot.line(). Even if it looked intimidating at first it's really just grouping your data and plotting it.
 
 Now that you know how to do it, why not go make your own? Tons of data can be found on Kaggle or are built into R. 

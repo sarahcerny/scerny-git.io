@@ -4,6 +4,8 @@ title: "About Me"
 
 Hi I'm Sarah!
 
+![Sarah Cerny](me.jpeg){fig-align="center" width=250}
+
 ## Background
 
 I'm a student at BYU studying Statistics with an emphasis in Data Science and a minor in Computer Science. I love learning and trying new things. 
