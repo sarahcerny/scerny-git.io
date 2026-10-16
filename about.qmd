@@ -7,3 +7,10 @@ Hi I'm Sarah!
 ## Background
 
 I'm a student at BYU studying Statistics with an emphasis in Data Science and a minor in Computer Science. I love learning and trying new things. 
+
+## Fun Facts
+
+- I love mountain biking, and I was captain of GRIT (Girls Riding Together) on the Lone Peak Mountain Bike Team for five years
+- I love to travel, and London this summer is my favorite trip so far
+- I used to be a canopy tour guide at a ropes course so I'm trained in safety and emergency response
+
