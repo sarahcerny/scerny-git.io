@@ -25,9 +25,12 @@ I just pulled the data from H&M fashion Dataset on Kaggle or a similar website a
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+
+# Load sales data
+sales = pd.read_csv("/Users/sarahcerny/Downloads/sales.csv")
 ```
 
-### Making the Data
+### Sales Dataframe
 
 The sales have three pieces: 
 - a **baseline**: what the store normally sells in a day
