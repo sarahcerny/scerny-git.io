@@ -9,7 +9,8 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
-      - Seasonal-Sales_Trends.qmd.qmd
+      - href: Seasonal-Sales-Trends.qmd
+        text: Seasonal Sales Tutorial
 
 format:
   html:
