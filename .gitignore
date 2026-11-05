@@ -11,3 +11,5 @@ wheels/
 
 /.quarto/
 **/*.quarto_ipynb
+
+census_key.txt

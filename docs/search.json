@@ -166,5 +166,61 @@
     "title": "Daily Sales to Seasonal Trends",
     "section": "Wrapping It Up",
     "text": "Wrapping It Up\nIn this tutorial, you should have learned how to turn a pile of daily sales into a chart that shows the seasons, using groupby, .agg(), and .plot.line(). Even if it looked intimidating at first it’s really just grouping your data and plotting it.\nNow that you know how to do it, why not go make your own? Tons of data can be found on Kaggle or are built into R."
+  },
+  {
+    "objectID": "Retail-Weather-Data.html#the-question",
+    "href": "Retail-Weather-Data.html#the-question",
+    "title": "Retail Weather Data Aquisition",
+    "section": "The Question",
+    "text": "The Question"
+  },
+  {
+    "objectID": "Retail-Weather-Data.html#ethical-data-collection",
+    "href": "Retail-Weather-Data.html#ethical-data-collection",
+    "title": "Retail Weather Data Aquisition",
+    "section": "Ethical Data Collection",
+    "text": "Ethical Data Collection"
+  },
+  {
+    "objectID": "Retail-Weather-Data.html#getting-the-data",
+    "href": "Retail-Weather-Data.html#getting-the-data",
+    "title": "Retail Weather Data Aquisition",
+    "section": "Getting the Data",
+    "text": "Getting the Data\n\nSource 1: Census Monthly Retail Trade\n\n\nSource 2: Open-Meteo Weather\n\n\nMerging"
+  },
+  {
+    "objectID": "Retail-Weather-Data.html#what-the-data-looks-like",
+    "href": "Retail-Weather-Data.html#what-the-data-looks-like",
+    "title": "Retail Weather Data Aquisition",
+    "section": "What the Data Looks Like",
+    "text": "What the Data Looks Like"
+  },
+  {
+    "objectID": "Retail-Weather-Data.html#early-findings",
+    "href": "Retail-Weather-Data.html#early-findings",
+    "title": "Retail Weather Data Aquisition",
+    "section": "Early Findings",
+    "text": "Early Findings"
+  },
+  {
+    "objectID": "Retail-Weather-Data.html#challenges-and-solutions",
+    "href": "Retail-Weather-Data.html#challenges-and-solutions",
+    "title": "Retail Weather Data Aquisition",
+    "section": "Challenges and Solutions",
+    "text": "Challenges and Solutions"
+  },
+  {
+    "objectID": "Retail-Weather-Data.html#conclusion",
+    "href": "Retail-Weather-Data.html#conclusion",
+    "title": "Retail Weather Data Aquisition",
+    "section": "Conclusion",
+    "text": "Conclusion"
+  },
+  {
+    "objectID": "Retail-Weather-Data.html#resources-and-links",
+    "href": "Retail-Weather-Data.html#resources-and-links",
+    "title": "Retail Weather Data Aquisition",
+    "section": "Resources and Links",
+    "text": "Resources and Links"
   }
 ]
