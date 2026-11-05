@@ -13,3 +13,4 @@ wheels/
 **/*.quarto_ipynb
 
 census_key.txt
+fetch_census.py

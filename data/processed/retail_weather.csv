@@ -1,0 +1,601 @@
+year,month,category,sales_millions,avg_temp_f,total_precip_in,holiday_flag
+2016,1,Building materials and garden,21269,26.8,2.95,0
+2016,2,Building materials and garden,22391,32.7,0.76,0
+2016,3,Building materials and garden,28908,42.1,2.48,0
+2016,4,Building materials and garden,31287,50.1,2.76,0
+2016,5,Building materials and garden,33425,57.8,1.85,0
+2016,6,Building materials and garden,32902,74.4,1.12,0
+2016,7,Building materials and garden,28929,80.6,0.11,0
+2016,8,Building materials and garden,28673,77.3,0.08,0
+2016,9,Building materials and garden,27595,65.6,2.81,0
+2016,10,Building materials and garden,27272,55.8,1.42,0
+2016,11,Building materials and garden,27249,43.2,1.48,1
+2016,12,Building materials and garden,25634,26.4,3.29,1
+2017,1,Building materials and garden,22227,24.5,4.18,0
+2017,2,Building materials and garden,22330,38.3,3.6,0
+2017,3,Building materials and garden,29011,47.5,3.28,0
+2017,4,Building materials and garden,31030,46.6,4.14,0
+2017,5,Building materials and garden,35374,57.3,1.1,0
+2017,6,Building materials and garden,33198,73.0,0.33,0
+2017,7,Building materials and garden,29852,81.3,0.64,0
+2017,8,Building materials and garden,30094,77.7,0.42,0
+2017,9,Building materials and garden,28786,64.0,2.56,0
+2017,10,Building materials and garden,29477,49.4,0.46,0
+2017,11,Building materials and garden,29002,45.7,1.76,1
+2017,12,Building materials and garden,26572,31.6,0.89,1
+2018,1,Building materials and garden,23451,34.2,1.58,0
+2018,2,Building materials and garden,23465,33.3,1.74,0
+2018,3,Building materials and garden,29738,39.9,3.0,0
+2018,4,Building materials and garden,32064,50.2,2.88,0
+2018,5,Building materials and garden,38047,60.5,1.51,0
+2018,6,Building materials and garden,35127,73.2,0.09,0
+2018,7,Building materials and garden,33338,82.4,0.06,0
+2018,8,Building materials and garden,32263,76.9,0.03,0
+2018,9,Building materials and garden,29533,70.6,0.0,0
+2018,10,Building materials and garden,32684,50.8,3.1,0
+2018,11,Building materials and garden,30146,36.7,2.0,1
+2018,12,Building materials and garden,27761,29.0,1.59,1
+2019,1,Building materials and garden,26848,29.2,2.55,0
+2019,2,Building materials and garden,24230,32.3,2.95,0
+2019,3,Building materials and garden,30232,39.3,4.34,0
+2019,4,Building materials and garden,34422,49.7,5.28,0
+2019,5,Building materials and garden,37709,53.7,3.5,0
+2019,6,Building materials and garden,33916,66.9,0.11,0
+2019,7,Building materials and garden,34091,79.7,0.34,0
+2019,8,Building materials and garden,32719,78.5,0.03,0
+2019,9,Building materials and garden,30277,65.5,3.39,0
+2019,10,Building materials and garden,32942,44.3,1.14,0
+2019,11,Building materials and garden,30043,40.5,1.41,1
+2019,12,Building materials and garden,28812,31.5,2.73,1
+2020,1,Building materials and garden,27082,32.8,2.66,0
+2020,2,Building materials and garden,26322,32.1,1.49,0
+2020,3,Building materials and garden,32337,42.9,2.92,0
+2020,4,Building materials and garden,36080,49.9,1.44,0
+2020,5,Building materials and garden,42768,62.7,0.62,0
+2020,6,Building materials and garden,42366,68.9,2.35,0
+2020,7,Building materials and garden,39665,80.3,0.1,0
+2020,8,Building materials and garden,36950,82.3,0.0,0
+2020,9,Building materials and garden,37263,68.5,0.25,0
+2020,10,Building materials and garden,37913,55.1,0.37,0
+2020,11,Building materials and garden,35086,40.9,0.81,1
+2020,12,Building materials and garden,34974,29.1,0.85,1
+2021,1,Building materials and garden,31561,31.8,1.01,0
+2021,2,Building materials and garden,29965,33.6,2.6,0
+2021,3,Building materials and garden,44116,41.2,1.6,0
+2021,4,Building materials and garden,47919,48.6,2.47,0
+2021,5,Building materials and garden,47827,60.6,0.82,0
+2021,6,Building materials and garden,46356,79.2,0.08,0
+2021,7,Building materials and garden,42575,84.5,0.05,0
+2021,8,Building materials and garden,40906,75.7,2.48,0
+2021,9,Building materials and garden,40237,68.7,0.22,0
+2021,10,Building materials and garden,40837,51.0,4.4,0
+2021,11,Building materials and garden,41011,43.1,1.99,1
+2021,12,Building materials and garden,39651,32.8,3.72,1
+2022,1,Building materials and garden,34840,29.3,1.05,0
+2022,2,Building materials and garden,34531,31.5,0.44,0
+2022,3,Building materials and garden,45819,42.0,2.08,0
+2022,4,Building materials and garden,47603,47.0,3.06,0
+2022,5,Building materials and garden,51815,55.9,2.27,0
+2022,6,Building materials and garden,49759,71.2,0.8,0
+2022,7,Building materials and garden,45021,84.3,0.17,0
+2022,8,Building materials and garden,46716,77.3,1.32,0
+2022,9,Building materials and garden,44162,70.6,1.65,0
+2022,10,Building materials and garden,44576,53.1,1.64,0
+2022,11,Building materials and garden,42162,33.2,2.86,1
+2022,12,Building materials and garden,40374,29.2,4.08,1
+2023,1,Building materials and garden,36402,29.3,5.01,0
+2023,2,Building materials and garden,35263,26.9,2.06,0
+2023,3,Building materials and garden,43501,33.6,6.04,0
+2023,4,Building materials and garden,45017,44.5,2.66,0
+2023,5,Building materials and garden,52820,60.7,1.1,0
+2023,6,Building materials and garden,48344,66.2,1.05,0
+2023,7,Building materials and garden,43838,82.2,0.12,0
+2023,8,Building materials and garden,45884,75.8,2.02,0
+2023,9,Building materials and garden,41707,66.9,1.23,0
+2023,10,Building materials and garden,43770,52.3,1.9,0
+2023,11,Building materials and garden,41604,40.8,2.34,1
+2023,12,Building materials and garden,38334,32.2,1.46,1
+2024,1,Building materials and garden,34281,32.0,4.04,0
+2024,2,Building materials and garden,35321,35.9,5.24,0
+2024,3,Building materials and garden,40470,39.7,4.26,0
+2024,4,Building materials and garden,46828,49.7,1.49,0
+2024,5,Building materials and garden,50729,56.1,1.16,0
+2024,6,Building materials and garden,45536,75.7,0.15,0
+2024,7,Building materials and garden,46138,81.6,0.02,0
+2024,8,Building materials and garden,44741,77.9,0.37,0
+2024,9,Building materials and garden,42053,69.9,0.45,0
+2024,10,Building materials and garden,46866,59.1,1.14,0
+2024,11,Building materials and garden,41945,36.4,2.29,1
+2024,12,Building materials and garden,38729,33.1,2.45,1
+2025,1,Building materials and garden,34429,28.1,1.23,0
+2025,2,Building materials and garden,32944,35.4,3.44,0
+2025,3,Building materials and garden,41665,42.1,3.71,0
+2025,4,Building materials and garden,47273,50.5,1.54,0
+2025,5,Building materials and garden,49214,62.5,2.18,0
+2025,6,Building materials and garden,45963,76.5,0.02,0
+2025,7,Building materials and garden,45372,82.8,0.01,0
+2025,8,Building materials and garden,42258,78.7,2.84,0
+2025,9,Building materials and garden,42128,70.0,0.53,0
+2025,10,Building materials and garden,44245,51.8,3.94,0
+2025,11,Building materials and garden,39779,46.1,2.17,1
+2025,12,Building materials and garden,39985,40.0,3.73,1
+2016,1,Clothing,15322,26.8,2.95,0
+2016,2,Clothing,18486,32.7,0.76,0
+2016,3,Clothing,20997,42.1,2.48,0
+2016,4,Clothing,19951,50.1,2.76,0
+2016,5,Clothing,21165,57.8,1.85,0
+2016,6,Clothing,19723,74.4,1.12,0
+2016,7,Clothing,20233,80.6,0.11,0
+2016,8,Clothing,21918,77.3,0.08,0
+2016,9,Clothing,19391,65.6,2.81,0
+2016,10,Clothing,20105,55.8,1.42,0
+2016,11,Clothing,23176,43.2,1.48,1
+2016,12,Clothing,33817,26.4,3.29,1
+2017,1,Clothing,15473,24.5,4.18,0
+2017,2,Clothing,17538,38.3,3.6,0
+2017,3,Clothing,20800,47.5,3.28,0
+2017,4,Clothing,20625,46.6,4.14,0
+2017,5,Clothing,21384,57.3,1.1,0
+2017,6,Clothing,20092,73.0,0.33,0
+2017,7,Clothing,20273,81.3,0.64,0
+2017,8,Clothing,22200,77.7,0.42,0
+2017,9,Clothing,19381,64.0,2.56,0
+2017,10,Clothing,19926,49.4,0.46,0
+2017,11,Clothing,23911,45.7,1.76,1
+2017,12,Clothing,32958,31.6,0.89,1
+2018,1,Clothing,15268,34.2,1.58,0
+2018,2,Clothing,17803,33.3,1.74,0
+2018,3,Clothing,21489,39.9,3.0,0
+2018,4,Clothing,19744,50.2,2.88,0
+2018,5,Clothing,22811,60.5,1.51,0
+2018,6,Clothing,20555,73.2,0.09,0
+2018,7,Clothing,20900,82.4,0.06,0
+2018,8,Clothing,22259,76.9,0.03,0
+2018,9,Clothing,19038,70.6,0.0,0
+2018,10,Clothing,20382,50.8,3.1,0
+2018,11,Clothing,24390,36.7,2.0,1
+2018,12,Clothing,32679,29.0,1.59,1
+2019,1,Clothing,15508,29.2,2.55,0
+2019,2,Clothing,17214,32.3,2.95,0
+2019,3,Clothing,21183,39.3,4.34,0
+2019,4,Clothing,20572,49.7,5.28,0
+2019,5,Clothing,22110,53.7,3.5,0
+2019,6,Clothing,20231,66.9,0.11,0
+2019,7,Clothing,20801,79.7,0.34,0
+2019,8,Clothing,22826,78.5,0.03,0
+2019,9,Clothing,18682,65.5,3.39,0
+2019,10,Clothing,20458,44.3,1.14,0
+2019,11,Clothing,24008,40.5,1.41,1
+2019,12,Clothing,33469,31.5,2.73,1
+2020,1,Clothing,15950,32.8,2.66,0
+2020,2,Clothing,18143,32.1,1.49,0
+2020,3,Clothing,10345,42.9,2.92,0
+2020,4,Clothing,2532,49.9,1.44,0
+2020,5,Clothing,8113,62.7,0.62,0
+2020,6,Clothing,15251,68.9,2.35,0
+2020,7,Clothing,16496,80.3,0.1,0
+2020,8,Clothing,17457,82.3,0.0,0
+2020,9,Clothing,17257,68.5,0.25,0
+2020,10,Clothing,18436,55.1,0.37,0
+2020,11,Clothing,19539,40.9,0.81,1
+2020,12,Clothing,29326,29.1,0.85,1
+2021,1,Clothing,14348,31.8,1.01,0
+2021,2,Clothing,14911,33.6,2.6,0
+2021,3,Clothing,22128,41.2,1.6,0
+2021,4,Clothing,21639,48.6,2.47,0
+2021,5,Clothing,24109,60.6,0.82,0
+2021,6,Clothing,22897,79.2,0.08,0
+2021,7,Clothing,23504,84.5,0.05,0
+2021,8,Clothing,23290,75.7,2.48,0
+2021,9,Clothing,20939,68.7,0.22,0
+2021,10,Clothing,22545,51.0,4.4,0
+2021,11,Clothing,26508,43.1,1.99,1
+2021,12,Clothing,36038,32.8,3.72,1
+2022,1,Clothing,16484,29.3,1.05,0
+2022,2,Clothing,18505,31.5,0.44,0
+2022,3,Clothing,23302,42.0,2.08,0
+2022,4,Clothing,23412,47.0,3.06,0
+2022,5,Clothing,24267,55.9,2.27,0
+2022,6,Clothing,22575,71.2,0.8,0
+2022,7,Clothing,22765,84.3,0.17,0
+2022,8,Clothing,23721,77.3,1.32,0
+2022,9,Clothing,21410,70.6,1.65,0
+2022,10,Clothing,22439,53.1,1.64,0
+2022,11,Clothing,25883,33.2,2.86,1
+2022,12,Clothing,36226,29.2,4.08,1
+2023,1,Clothing,17604,29.3,5.01,0
+2023,2,Clothing,18965,26.9,2.06,0
+2023,3,Clothing,22550,33.6,6.04,0
+2023,4,Clothing,22340,44.5,2.66,0
+2023,5,Clothing,23966,60.7,1.1,0
+2023,6,Clothing,22397,66.2,1.05,0
+2023,7,Clothing,22924,82.2,0.12,0
+2023,8,Clothing,24500,75.8,2.02,0
+2023,9,Clothing,21445,66.9,1.23,0
+2023,10,Clothing,21990,52.3,1.9,0
+2023,11,Clothing,26116,40.8,2.34,1
+2023,12,Clothing,37253,32.2,1.46,1
+2024,1,Clothing,17405,32.0,4.04,0
+2024,2,Clothing,19902,35.9,5.24,0
+2024,3,Clothing,22718,39.7,4.26,0
+2024,4,Clothing,21804,49.7,1.49,0
+2024,5,Clothing,24934,56.1,1.16,0
+2024,6,Clothing,22850,75.7,0.15,0
+2024,7,Clothing,23110,81.6,0.02,0
+2024,8,Clothing,24671,77.9,0.37,0
+2024,9,Clothing,20888,69.9,0.45,0
+2024,10,Clothing,22871,59.1,1.14,0
+2024,11,Clothing,26942,36.4,2.29,1
+2024,12,Clothing,37096,33.1,2.45,1
+2025,1,Clothing,18203,28.1,1.23,0
+2025,2,Clothing,19221,35.4,3.44,0
+2025,3,Clothing,23360,42.1,3.71,0
+2025,4,Clothing,23179,50.5,1.54,0
+2025,5,Clothing,26171,62.5,2.18,0
+2025,6,Clothing,23399,76.5,0.02,0
+2025,7,Clothing,25024,82.8,0.01,0
+2025,8,Clothing,26435,78.7,2.84,0
+2025,9,Clothing,22369,70.0,0.53,0
+2025,10,Clothing,24528,51.8,3.94,0
+2025,11,Clothing,28902,46.1,2.17,1
+2025,12,Clothing,39105,40.0,3.73,1
+2016,1,Food and beverage,56335,26.8,2.95,0
+2016,2,Food and beverage,53542,32.7,0.76,0
+2016,3,Food and beverage,57434,42.1,2.48,0
+2016,4,Food and beverage,55642,50.1,2.76,0
+2016,5,Food and beverage,58582,57.8,1.85,0
+2016,6,Food and beverage,57875,74.4,1.12,0
+2016,7,Food and beverage,59188,80.6,0.11,0
+2016,8,Food and beverage,57994,77.3,0.08,0
+2016,9,Food and beverage,56838,65.6,2.81,0
+2016,10,Food and beverage,58129,55.8,1.42,0
+2016,11,Food and beverage,58575,43.2,1.48,1
+2016,12,Food and beverage,64302,26.4,3.29,1
+2017,1,Food and beverage,57253,24.5,4.18,0
+2017,2,Food and beverage,53962,38.3,3.6,0
+2017,3,Food and beverage,59657,47.5,3.28,0
+2017,4,Food and beverage,59018,46.6,4.14,0
+2017,5,Food and beverage,61494,57.3,1.1,0
+2017,6,Food and beverage,59939,73.0,0.33,0
+2017,7,Food and beverage,60991,81.3,0.64,0
+2017,8,Food and beverage,60788,77.7,0.42,0
+2017,9,Food and beverage,59665,64.0,2.56,0
+2017,10,Food and beverage,60121,49.4,0.46,0
+2017,11,Food and beverage,61424,45.7,1.76,1
+2017,12,Food and beverage,67064,31.6,0.89,1
+2018,1,Food and beverage,59745,34.2,1.58,0
+2018,2,Food and beverage,55828,33.3,1.74,0
+2018,3,Food and beverage,63037,39.9,3.0,0
+2018,4,Food and beverage,58788,50.2,2.88,0
+2018,5,Food and beverage,63757,60.5,1.51,0
+2018,6,Food and beverage,62035,73.2,0.09,0
+2018,7,Food and beverage,62631,82.4,0.06,0
+2018,8,Food and beverage,62876,76.9,0.03,0
+2018,9,Food and beverage,60508,70.6,0.0,0
+2018,10,Food and beverage,61851,50.8,3.1,0
+2018,11,Food and beverage,63048,36.7,2.0,1
+2018,12,Food and beverage,67415,29.0,1.59,1
+2019,1,Food and beverage,62395,29.2,2.55,0
+2019,2,Food and beverage,56470,32.3,2.95,0
+2019,3,Food and beverage,63051,39.3,4.34,0
+2019,4,Food and beverage,61856,49.7,5.28,0
+2019,5,Food and beverage,66000,53.7,3.5,0
+2019,6,Food and beverage,63922,66.9,0.11,0
+2019,7,Food and beverage,65750,79.7,0.34,0
+2019,8,Food and beverage,66225,78.5,0.03,0
+2019,9,Food and beverage,61623,65.5,3.39,0
+2019,10,Food and beverage,63836,44.3,1.14,0
+2019,11,Food and beverage,65272,40.5,1.41,1
+2019,12,Food and beverage,68658,31.5,2.73,1
+2020,1,Food and beverage,63170,32.8,2.66,0
+2020,2,Food and beverage,60439,32.1,1.49,0
+2020,3,Food and beverage,79001,42.9,2.92,0
+2020,4,Food and beverage,69039,49.9,1.44,0
+2020,5,Food and beverage,74162,62.7,0.62,0
+2020,6,Food and beverage,69466,68.9,2.35,0
+2020,7,Food and beverage,72607,80.3,0.1,0
+2020,8,Food and beverage,69963,82.3,0.0,0
+2020,9,Food and beverage,67267,68.5,0.25,0
+2020,10,Food and beverage,69550,55.1,0.37,0
+2020,11,Food and beverage,69634,40.9,0.81,1
+2020,12,Food and beverage,75049,29.1,0.85,1
+2021,1,Food and beverage,69711,31.8,1.01,0
+2021,2,Food and beverage,64089,33.6,2.6,0
+2021,3,Food and beverage,70735,41.2,1.6,0
+2021,4,Food and beverage,69701,48.6,2.47,0
+2021,5,Food and beverage,74539,60.6,0.82,0
+2021,6,Food and beverage,73094,79.2,0.08,0
+2021,7,Food and beverage,75520,84.5,0.05,0
+2021,8,Food and beverage,74568,75.7,2.48,0
+2021,9,Food and beverage,72905,68.7,0.22,0
+2021,10,Food and beverage,75661,51.0,4.4,0
+2021,11,Food and beverage,75472,43.1,1.99,1
+2021,12,Food and beverage,82347,32.8,3.72,1
+2022,1,Food and beverage,74777,29.3,1.05,0
+2022,2,Food and beverage,69153,31.5,0.44,0
+2022,3,Food and beverage,76107,42.0,2.08,0
+2022,4,Food and beverage,76405,47.0,3.06,0
+2022,5,Food and beverage,79667,55.9,2.27,0
+2022,6,Food and beverage,79062,71.2,0.8,0
+2022,7,Food and beverage,80930,84.3,0.17,0
+2022,8,Food and beverage,79482,77.3,1.32,0
+2022,9,Food and beverage,77665,70.6,1.65,0
+2022,10,Food and beverage,80230,53.1,1.64,0
+2022,11,Food and beverage,81285,33.2,2.86,1
+2022,12,Food and beverage,87548,29.2,4.08,1
+2023,1,Food and beverage,77522,29.3,5.01,0
+2023,2,Food and beverage,72858,26.9,2.06,0
+2023,3,Food and beverage,79366,33.6,6.04,0
+2023,4,Food and beverage,78218,44.5,2.66,0
+2023,5,Food and beverage,81949,60.7,1.1,0
+2023,6,Food and beverage,79768,66.2,1.05,0
+2023,7,Food and beverage,81604,82.2,0.12,0
+2023,8,Food and beverage,81294,75.8,2.02,0
+2023,9,Food and beverage,79120,66.9,1.23,0
+2023,10,Food and beverage,79859,52.3,1.9,0
+2023,11,Food and beverage,81792,40.8,2.34,1
+2023,12,Food and beverage,87603,32.2,1.46,1
+2024,1,Food and beverage,78366,32.0,4.04,0
+2024,2,Food and beverage,75385,35.9,5.24,0
+2024,3,Food and beverage,81740,39.7,4.26,0
+2024,4,Food and beverage,77426,49.7,1.49,0
+2024,5,Food and beverage,84291,56.1,1.16,0
+2024,6,Food and beverage,81330,75.7,0.15,0
+2024,7,Food and beverage,83706,81.6,0.02,0
+2024,8,Food and beverage,83635,77.9,0.37,0
+2024,9,Food and beverage,79670,69.9,0.45,0
+2024,10,Food and beverage,83198,59.1,1.14,0
+2024,11,Food and beverage,84444,36.4,2.29,1
+2024,12,Food and beverage,88960,33.1,2.45,1
+2025,1,Food and beverage,82414,28.1,1.23,0
+2025,2,Food and beverage,75713,35.4,3.44,0
+2025,3,Food and beverage,82337,42.1,3.71,0
+2025,4,Food and beverage,81929,50.5,1.54,0
+2025,5,Food and beverage,86507,62.5,2.18,0
+2025,6,Food and beverage,82615,76.5,0.02,0
+2025,7,Food and beverage,86091,82.8,0.01,0
+2025,8,Food and beverage,86054,78.7,2.84,0
+2025,9,Food and beverage,81532,70.0,0.53,0
+2025,10,Food and beverage,85352,51.8,3.94,0
+2025,11,Food and beverage,85194,46.1,2.17,1
+2025,12,Food and beverage,90541,40.0,3.73,1
+2016,1,General merchandise,50387,26.8,2.95,0
+2016,2,General merchandise,52029,32.7,0.76,0
+2016,3,General merchandise,56519,42.1,2.48,0
+2016,4,General merchandise,54140,50.1,2.76,0
+2016,5,General merchandise,56961,57.8,1.85,0
+2016,6,General merchandise,55788,74.4,1.12,0
+2016,7,General merchandise,56380,80.6,0.11,0
+2016,8,General merchandise,56530,77.3,0.08,0
+2016,9,General merchandise,52201,65.6,2.81,0
+2016,10,General merchandise,56032,55.8,1.42,0
+2016,11,General merchandise,60786,43.2,1.48,1
+2016,12,General merchandise,73667,26.4,3.29,1
+2017,1,General merchandise,50920,24.5,4.18,0
+2017,2,General merchandise,50150,38.3,3.6,0
+2017,3,General merchandise,56029,47.5,3.28,0
+2017,4,General merchandise,55956,46.6,4.14,0
+2017,5,General merchandise,56727,57.3,1.1,0
+2017,6,General merchandise,56994,73.0,0.33,0
+2017,7,General merchandise,56736,81.3,0.64,0
+2017,8,General merchandise,57794,77.7,0.42,0
+2017,9,General merchandise,54701,64.0,2.56,0
+2017,10,General merchandise,56632,49.4,0.46,0
+2017,11,General merchandise,62321,45.7,1.76,1
+2017,12,General merchandise,75366,31.6,0.89,1
+2018,1,General merchandise,51454,34.2,1.58,0
+2018,2,General merchandise,51296,33.3,1.74,0
+2018,3,General merchandise,59610,39.9,3.0,0
+2018,4,General merchandise,54341,50.2,2.88,0
+2018,5,General merchandise,60921,60.5,1.51,0
+2018,6,General merchandise,58816,73.2,0.09,0
+2018,7,General merchandise,58156,82.4,0.06,0
+2018,8,General merchandise,60782,76.9,0.03,0
+2018,9,General merchandise,55759,70.6,0.0,0
+2018,10,General merchandise,58684,50.8,3.1,0
+2018,11,General merchandise,66891,36.7,2.0,1
+2018,12,General merchandise,79284,29.0,1.59,1
+2019,1,General merchandise,53106,29.2,2.55,0
+2019,2,General merchandise,51790,32.3,2.95,0
+2019,3,General merchandise,60159,39.3,4.34,0
+2019,4,General merchandise,58469,49.7,5.28,0
+2019,5,General merchandise,62485,53.7,3.5,0
+2019,6,General merchandise,60702,66.9,0.11,0
+2019,7,General merchandise,60551,79.7,0.34,0
+2019,8,General merchandise,63854,78.5,0.03,0
+2019,9,General merchandise,56462,65.5,3.39,0
+2019,10,General merchandise,60837,44.3,1.14,0
+2019,11,General merchandise,68173,40.5,1.41,1
+2019,12,General merchandise,79826,31.5,2.73,1
+2020,1,General merchandise,55716,32.8,2.66,0
+2020,2,General merchandise,56824,32.1,1.49,0
+2020,3,General merchandise,62936,42.9,2.92,0
+2020,4,General merchandise,56745,49.9,1.44,0
+2020,5,General merchandise,66513,62.7,0.62,0
+2020,6,General merchandise,63075,68.9,2.35,0
+2020,7,General merchandise,63836,80.3,0.1,0
+2020,8,General merchandise,64290,82.3,0.0,0
+2020,9,General merchandise,60264,68.5,0.25,0
+2020,10,General merchandise,64954,55.1,0.37,0
+2020,11,General merchandise,67695,40.9,0.81,1
+2020,12,General merchandise,79050,29.1,0.85,1
+2021,1,General merchandise,61934,31.8,1.01,0
+2021,2,General merchandise,56072,33.6,2.6,0
+2021,3,General merchandise,68265,41.2,1.6,0
+2021,4,General merchandise,68106,48.6,2.47,0
+2021,5,General merchandise,72778,60.6,0.82,0
+2021,6,General merchandise,68853,79.2,0.08,0
+2021,7,General merchandise,70727,84.5,0.05,0
+2021,8,General merchandise,71771,75.7,2.48,0
+2021,9,General merchandise,66806,68.7,0.22,0
+2021,10,General merchandise,73557,51.0,4.4,0
+2021,11,General merchandise,76579,43.1,1.99,1
+2021,12,General merchandise,90301,32.8,3.72,1
+2022,1,General merchandise,66590,29.3,1.05,0
+2022,2,General merchandise,64798,31.5,0.44,0
+2022,3,General merchandise,72728,42.0,2.08,0
+2022,4,General merchandise,76299,47.0,3.06,0
+2022,5,General merchandise,79851,55.9,2.27,0
+2022,6,General merchandise,78176,71.2,0.8,0
+2022,7,General merchandise,78317,84.3,0.17,0
+2022,8,General merchandise,79145,77.3,1.32,0
+2022,9,General merchandise,74555,70.6,1.65,0
+2022,10,General merchandise,79031,53.1,1.64,0
+2022,11,General merchandise,81988,33.2,2.86,1
+2022,12,General merchandise,96014,29.2,4.08,1
+2023,1,General merchandise,69032,29.3,5.01,0
+2023,2,General merchandise,66395,26.9,2.06,0
+2023,3,General merchandise,71337,33.6,6.04,0
+2023,4,General merchandise,73503,44.5,2.66,0
+2023,5,General merchandise,75910,60.7,1.1,0
+2023,6,General merchandise,74219,66.2,1.05,0
+2023,7,General merchandise,74312,82.2,0.12,0
+2023,8,General merchandise,75948,75.8,2.02,0
+2023,9,General merchandise,71269,66.9,1.23,0
+2023,10,General merchandise,74102,52.3,1.9,0
+2023,11,General merchandise,78154,40.8,2.34,1
+2023,12,General merchandise,93247,32.2,1.46,1
+2024,1,General merchandise,66540,32.0,4.04,0
+2024,2,General merchandise,67880,35.9,5.24,0
+2024,3,General merchandise,76251,39.7,4.26,0
+2024,4,General merchandise,71292,49.7,1.49,0
+2024,5,General merchandise,78362,56.1,1.16,0
+2024,6,General merchandise,75941,75.7,0.15,0
+2024,7,General merchandise,75724,81.6,0.02,0
+2024,8,General merchandise,79312,77.9,0.37,0
+2024,9,General merchandise,72526,69.9,0.45,0
+2024,10,General merchandise,77313,59.1,1.14,0
+2024,11,General merchandise,82382,36.4,2.29,1
+2024,12,General merchandise,94879,33.1,2.45,1
+2025,1,General merchandise,70814,28.1,1.23,0
+2025,2,General merchandise,67323,35.4,3.44,0
+2025,3,General merchandise,76447,42.1,3.71,0
+2025,4,General merchandise,75229,50.5,1.54,0
+2025,5,General merchandise,80504,62.5,2.18,0
+2025,6,General merchandise,76961,76.5,0.02,0
+2025,7,General merchandise,77771,82.8,0.01,0
+2025,8,General merchandise,81276,78.7,2.84,0
+2025,9,General merchandise,73234,70.0,0.53,0
+2025,10,General merchandise,79499,51.8,3.94,0
+2025,11,General merchandise,83496,46.1,2.17,1
+2025,12,General merchandise,95564,40.0,3.73,1
+2016,1,"Sporting goods, hobby, books",6159,26.8,2.95,0
+2016,2,"Sporting goods, hobby, books",5605,32.7,0.76,0
+2016,3,"Sporting goods, hobby, books",6643,42.1,2.48,0
+2016,4,"Sporting goods, hobby, books",6233,50.1,2.76,0
+2016,5,"Sporting goods, hobby, books",6423,57.8,1.85,0
+2016,6,"Sporting goods, hobby, books",6929,74.4,1.12,0
+2016,7,"Sporting goods, hobby, books",6641,80.6,0.11,0
+2016,8,"Sporting goods, hobby, books",7482,77.3,0.08,0
+2016,9,"Sporting goods, hobby, books",6459,65.6,2.81,0
+2016,10,"Sporting goods, hobby, books",6037,55.8,1.42,0
+2016,11,"Sporting goods, hobby, books",7299,43.2,1.48,1
+2016,12,"Sporting goods, hobby, books",11020,26.4,3.29,1
+2017,1,"Sporting goods, hobby, books",5971,24.5,4.18,0
+2017,2,"Sporting goods, hobby, books",5337,38.3,3.6,0
+2017,3,"Sporting goods, hobby, books",6370,47.5,3.28,0
+2017,4,"Sporting goods, hobby, books",6100,46.6,4.14,0
+2017,5,"Sporting goods, hobby, books",6303,57.3,1.1,0
+2017,6,"Sporting goods, hobby, books",6462,73.0,0.33,0
+2017,7,"Sporting goods, hobby, books",6247,81.3,0.64,0
+2017,8,"Sporting goods, hobby, books",7347,77.7,0.42,0
+2017,9,"Sporting goods, hobby, books",6444,64.0,2.56,0
+2017,10,"Sporting goods, hobby, books",6070,49.4,0.46,0
+2017,11,"Sporting goods, hobby, books",7451,45.7,1.76,1
+2017,12,"Sporting goods, hobby, books",10428,31.6,0.89,1
+2018,1,"Sporting goods, hobby, books",5622,34.2,1.58,0
+2018,2,"Sporting goods, hobby, books",5326,33.3,1.74,0
+2018,3,"Sporting goods, hobby, books",6606,39.9,3.0,0
+2018,4,"Sporting goods, hobby, books",5956,50.2,2.88,0
+2018,5,"Sporting goods, hobby, books",6364,60.5,1.51,0
+2018,6,"Sporting goods, hobby, books",6397,73.2,0.09,0
+2018,7,"Sporting goods, hobby, books",5933,82.4,0.06,0
+2018,8,"Sporting goods, hobby, books",6870,76.9,0.03,0
+2018,9,"Sporting goods, hobby, books",5670,70.6,0.0,0
+2018,10,"Sporting goods, hobby, books",5596,50.8,3.1,0
+2018,11,"Sporting goods, hobby, books",6740,36.7,2.0,1
+2018,12,"Sporting goods, hobby, books",8659,29.0,1.59,1
+2019,1,"Sporting goods, hobby, books",5246,29.2,2.55,0
+2019,2,"Sporting goods, hobby, books",4855,32.3,2.95,0
+2019,3,"Sporting goods, hobby, books",5875,39.3,4.34,0
+2019,4,"Sporting goods, hobby, books",5781,49.7,5.28,0
+2019,5,"Sporting goods, hobby, books",6030,53.7,3.5,0
+2019,6,"Sporting goods, hobby, books",6169,66.9,0.11,0
+2019,7,"Sporting goods, hobby, books",6136,79.7,0.34,0
+2019,8,"Sporting goods, hobby, books",7055,78.5,0.03,0
+2019,9,"Sporting goods, hobby, books",5834,65.5,3.39,0
+2019,10,"Sporting goods, hobby, books",5907,44.3,1.14,0
+2019,11,"Sporting goods, hobby, books",6743,40.5,1.41,1
+2019,12,"Sporting goods, hobby, books",8866,31.5,2.73,1
+2020,1,"Sporting goods, hobby, books",5402,32.8,2.66,0
+2020,2,"Sporting goods, hobby, books",5146,32.1,1.49,0
+2020,3,"Sporting goods, hobby, books",4839,42.9,2.92,0
+2020,4,"Sporting goods, hobby, books",3196,49.9,1.44,0
+2020,5,"Sporting goods, hobby, books",5763,62.7,0.62,0
+2020,6,"Sporting goods, hobby, books",7596,68.9,2.35,0
+2020,7,"Sporting goods, hobby, books",7265,80.3,0.1,0
+2020,8,"Sporting goods, hobby, books",7380,82.3,0.0,0
+2020,9,"Sporting goods, hobby, books",6982,68.5,0.25,0
+2020,10,"Sporting goods, hobby, books",6807,55.1,0.37,0
+2020,11,"Sporting goods, hobby, books",7479,40.9,0.81,1
+2020,12,"Sporting goods, hobby, books",10109,29.1,0.85,1
+2021,1,"Sporting goods, hobby, books",6649,31.8,1.01,0
+2021,2,"Sporting goods, hobby, books",5561,33.6,2.6,0
+2021,3,"Sporting goods, hobby, books",8247,41.2,1.6,0
+2021,4,"Sporting goods, hobby, books",7746,48.6,2.47,0
+2021,5,"Sporting goods, hobby, books",7678,60.6,0.82,0
+2021,6,"Sporting goods, hobby, books",8169,79.2,0.08,0
+2021,7,"Sporting goods, hobby, books",7799,84.5,0.05,0
+2021,8,"Sporting goods, hobby, books",8453,75.7,2.48,0
+2021,9,"Sporting goods, hobby, books",7408,68.7,0.22,0
+2021,10,"Sporting goods, hobby, books",7368,51.0,4.4,0
+2021,11,"Sporting goods, hobby, books",8696,43.1,1.99,1
+2021,12,"Sporting goods, hobby, books",11137,32.8,3.72,1
+2022,1,"Sporting goods, hobby, books",6335,29.3,1.05,0
+2022,2,"Sporting goods, hobby, books",6186,31.5,0.44,0
+2022,3,"Sporting goods, hobby, books",7613,42.0,2.08,0
+2022,4,"Sporting goods, hobby, books",7465,47.0,3.06,0
+2022,5,"Sporting goods, hobby, books",7496,55.9,2.27,0
+2022,6,"Sporting goods, hobby, books",7896,71.2,0.8,0
+2022,7,"Sporting goods, hobby, books",7772,84.3,0.17,0
+2022,8,"Sporting goods, hobby, books",8661,77.3,1.32,0
+2022,9,"Sporting goods, hobby, books",7568,70.6,1.65,0
+2022,10,"Sporting goods, hobby, books",7391,53.1,1.64,0
+2022,11,"Sporting goods, hobby, books",8603,33.2,2.86,1
+2022,12,"Sporting goods, hobby, books",11346,29.2,4.08,1
+2023,1,"Sporting goods, hobby, books",6559,29.3,5.01,0
+2023,2,"Sporting goods, hobby, books",6094,26.9,2.06,0
+2023,3,"Sporting goods, hobby, books",7399,33.6,6.04,0
+2023,4,"Sporting goods, hobby, books",7145,44.5,2.66,0
+2023,5,"Sporting goods, hobby, books",7477,60.7,1.1,0
+2023,6,"Sporting goods, hobby, books",7754,66.2,1.05,0
+2023,7,"Sporting goods, hobby, books",7652,82.2,0.12,0
+2023,8,"Sporting goods, hobby, books",8332,75.8,2.02,0
+2023,9,"Sporting goods, hobby, books",7427,66.9,1.23,0
+2023,10,"Sporting goods, hobby, books",7182,52.3,1.9,0
+2023,11,"Sporting goods, hobby, books",8489,40.8,2.34,1
+2023,12,"Sporting goods, hobby, books",10811,32.2,1.46,1
+2024,1,"Sporting goods, hobby, books",6528,32.0,4.04,0
+2024,2,"Sporting goods, hobby, books",6375,35.9,5.24,0
+2024,3,"Sporting goods, hobby, books",7424,39.7,4.26,0
+2024,4,"Sporting goods, hobby, books",6844,49.7,1.49,0
+2024,5,"Sporting goods, hobby, books",7513,56.1,1.16,0
+2024,6,"Sporting goods, hobby, books",7666,75.7,0.15,0
+2024,7,"Sporting goods, hobby, books",7538,81.6,0.02,0
+2024,8,"Sporting goods, hobby, books",8370,77.9,0.37,0
+2024,9,"Sporting goods, hobby, books",7308,69.9,0.45,0
+2024,10,"Sporting goods, hobby, books",7408,59.1,1.14,0
+2024,11,"Sporting goods, hobby, books",8712,36.4,2.29,1
+2024,12,"Sporting goods, hobby, books",11245,33.1,2.45,1
+2025,1,"Sporting goods, hobby, books",6584,28.1,1.23,0
+2025,2,"Sporting goods, hobby, books",6101,35.4,3.44,0
+2025,3,"Sporting goods, hobby, books",7598,42.1,3.71,0
+2025,4,"Sporting goods, hobby, books",7038,50.5,1.54,0
+2025,5,"Sporting goods, hobby, books",7723,62.5,2.18,0
+2025,6,"Sporting goods, hobby, books",7574,76.5,0.02,0
+2025,7,"Sporting goods, hobby, books",7839,82.8,0.01,0
+2025,8,"Sporting goods, hobby, books",8738,78.7,2.84,0
+2025,9,"Sporting goods, hobby, books",7456,70.0,0.53,0
+2025,10,"Sporting goods, hobby, books",7694,51.8,3.94,0
+2025,11,"Sporting goods, hobby, books",8946,46.1,2.17,1
+2025,12,"Sporting goods, hobby, books",11888,40.0,3.73,1
