@@ -11,6 +11,8 @@ website:
       - about.qmd
       - href: Seasonal-Sales-Trends.qmd
         text: Seasonal Sales Tutorial
+      - href: Retail-Weather-Data.qmd
+        text: Retail Weather Data Aquisition
 
 format:
   html:

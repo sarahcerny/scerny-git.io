@@ -1,0 +1,30 @@
+---
+title: "Retail Weather Data Aquisition"
+date: 2026-11-05
+execute:
+  warning: false
+---
+
+## Introduction
+
+## The Question
+
+## Ethical Data Collection
+
+## Getting the Data
+
+### Source 1: Census Monthly Retail Trade
+
+### Source 2: Open-Meteo Weather
+
+### Merging
+
+## What the Data Looks Like
+
+## Early Findings
+
+## Challenges and Solutions
+
+## Conclusion
+
+## Resources and Links
